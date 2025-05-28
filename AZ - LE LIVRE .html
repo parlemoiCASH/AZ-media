@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZ LE LIVRE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Cormorant Garamond', serif;
+      background-color: #0F0E0E;
+      color: #E4DCCF;
+    }
+
+    header {
+      background-color: #1C1A1A;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #B59F3B;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #B59F3B;
+      text-shadow: 0 0 5px #5A4EAB;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin: 1rem auto;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Esoteric_symbol.svg/1024px-Esoteric_symbol.svg.png') center/contain no-repeat;
+      filter: brightness(0.6);
+      transition: filter 0.5s ease, transform 0.5s ease;
+    }
+
+    .logo:hover {
+      filter: brightness(1.2) drop-shadow(0 0 15px #5A4EAB);
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      border-bottom: 1px dashed #4A9A8F;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #8C6D1F;
+    }
+
+    .glow {
+      text-shadow: 0 0 8px #4A9A8F;
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 1rem 0;
+      padding-left: 1rem;
+      border-left: 3px solid #A32525;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .hidden-section {
+      display: none;
+      background-color: #1C1A1A;
+      border: 1px solid #8C6D1F;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .media {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .media img, .media video {
+      max-width: 300px;
+      width: 100%;
+      border: 1px solid #5A4EAB;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" title="Symbole AZ sacré"></div>
+    <h1>AZ - LE LIVRE</h1>
+    <p class="quote">« Ce n’est pas une COMMUNAUTE. C’est une Armée Invisible. »</p>
+  </header>
+
+  <div id="chapters">
+    <section>
+      <h2>Chapitre I – Léger Discours</h2>
+      <p>
+        Nous sommes LE AZ , les gardiens du Verbe et des Émotions, ceux qui vont de A à Z, sans compromis.<br>
+        Chaque son est une peinture orale, chaque mot une couleur, chaque silence une profondeur.<br>
+        Ici, l’art est pur, brut, émotionnel.
+      </p>
+    </section>
+
+    <section>
+      <h2>Chapitre II – Esprit AZ</h2>
+      <p>
+        Pour rejoindre le cercle :<br>
+        - Trace "AZ" dans l’air avec ta main.<br>
+        - Prononce : <span class="glow">"J-DAZ PARLE MOI CASH"</span>.<br>
+        - Tu seras des nôtres.
+      </p>
+    </section>
+
+    <section>
+      <h2>Chapitre III – Flemme et Appartenance</h2>
+      <p>
+        Si tu as la flemme de commenter sous les posts des fois mets juste ces marques ci-dessous pour montrer ton appartenance au AZ<br>
+        #JDAZARMY<br>
+        #AZARMY<br>
+        #JDAZPARLEMOICASH<br>
+        #AZ<br>
+      </p>
+    </section>
+
+    <section>
+      <h2>Chapitre V – ZONE SPIRITUELLE</h2>
+      <p>
+        Entre le mot de ralliement pour débloquer la ZONE SPIRITUELLE :
+      </p>
+      <input id="passwordInput" type="text" placeholder="Tu connais pas code là ??" style="padding: 0.5rem; border: 1px solid #8C6D1F; background-color: #1C1A1A; color: #E4DCCF; width: 80%; max-width: 300px; margin-top: 1rem; display: block;">
+      <button onclick="checkPassword()" style="padding: 0.5rem 1rem; background-color: #5A4EAB; color: white; border: none; cursor: pointer; margin-top: 1rem;">C'est tchô</button>
+      <p>ON SE RETROUVE DE L'AUTRE CÖTE POUR L'IMMERSION AUDITIVE.</p>
+
+      <div id="hiddenSection" class="hidden-section">
+        <h3>Contenu Exclusif – Sessions Studio & Inédits</h3>
+        <div class="media">
+		<img src="https://github.com/parlemoiCASH/AZ-media/blob/main/3IMG_4594.JPG?raw=true" alt="Studio 1">
+        <img src="https://github.com/parlemoiCASH/AZ-media/blob/main/WhatsApp%20Image%202025-05-27%20at%2011.24.52_2ac7b2e6.jpg?raw=true" alt="Studio 2">  
+          
+          <video controls>
+            <source src="https://github.com/parlemoiCASH/AZ-media/blob/main/video_2025-05-27_23-34-56.mp4?raw=true" type="video/mp4">
+            Votre navigateur ne prend pas en charge la vidéo.
+          </video>
+          <video controls>
+            <source src="" type="">
+            Votre navigateur ne prend pas en charge la vidéo.
+          </video>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>J-DAZ NE FAIS PAS DE SONS. IL ACTIVE DES PORTES.</p>
+  </footer>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('passwordInput').value.trim().toLowerCase();
+      if (input === 'parlemoicash') {
+        document.getElementById('hiddenSection').style.display = 'block';
+      } else {
+        alert('Yaaashhhh tu as raté. Essaie encore.');
+      }
+    }
+  </script>
+</body>
+</html>
